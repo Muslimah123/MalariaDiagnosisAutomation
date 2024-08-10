@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Automated Malaria Diagnosis System - Login</title>
+    <link rel="stylesheet" href="../css/login.css">
+    <!-- <script src="https://kit.fontawesome.com/your-fontawesome-kit.js" crossorigin="anonymous"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="left-section">
+            <img src="../images/microscope.jpg" alt="Scientist using microscope" class="main-image">
+            <h1>Automated Malaria Diagnosis</h1>
+            <p>Precision in Malaria Detection</p>
+        </div>
+        <div class="right-section">
+            <h2>Login to Your Account</h2>
+            <div id="error-message" class="error-message"></div>
+            <div class="input-container">
+                <input type="email" id="email" placeholder="Email" required>
+                <i class="fas fa-envelope"></i>
+            </div>
+            <div class="input-container">
+                <input type="password" id="password" placeholder="Password" required>
+                <i class="fas fa-lock"></i>
+            </div>
+            <button onclick="login()">Login</button>
+            <div class="extra-options">
+                <label><input type="checkbox" id="remember-me"> Remember Me</label>
+                <a href="#">Forgot Password?</a>
+            </div>
+            <p class="register-link">New to the system? <a href="#">Register here</a></p>
+        </div>
+    </div>
+    <script src="../js/login.js"></script>
+</body>
+</html>

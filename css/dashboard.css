@@ -1,0 +1,178 @@
+/* Malaria Diagnosis Dashboard Styles */
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 0;
+}
+
+.container-fluid {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Header Styles */
+header {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    border-bottom: 1px solid #dee2e6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+}
+main {
+    margin-left: 220px; /* Adjust based on your sidebar width */
+    padding: 20px;
+    margin-top: 60px; /* Adjust this value based on your header height */
+}
+#malaria-diagnosis {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.quick-actions .btn {
+    margin-right: 10px;
+}
+
+.notification-icon {
+    font-size: 20px;
+    margin-right: 15px;
+    cursor: pointer;
+    position: relative
+}
+
+.notification-badge {
+    position: absolute;
+    top: -5px;
+    right: -5px;
+    padding: 3px 6px;
+    border-radius: 50%;
+    background-color: #dc3545;
+    color: white;
+    font-size: 0.75rem;
+}
+
+.user-avatar {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* Sidebar Styles */
+.sidebar {
+    background-color: #f8f9fa;
+    border-right: 1px solid #dee2e6;
+    height: calc(100vh - 60px);
+    position: fixed;
+    top: 60px;
+}
+
+.sidebar-sticky {
+    position: sticky;
+    top: 0;
+    height: calc(100vh - 60px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.sidebar .nav-link {
+    color: #333;
+    padding: 0.5rem 1rem;
+}
+
+.sidebar .nav-link.active,
+.sidebar .nav-link:hover {
+    background-color: #e9ecef;
+}
+
+/* Main Content Area */
+main {
+    margin-left: 220px; /* Adjust based on your sidebar width */
+    padding: 20px;
+}
+
+/* Dashboard Stats Cards */
+.stat-card {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.stat-card .card-body {
+    padding: 20px;
+}
+
+.stat-card h5 {
+    font-size: 0.9rem;
+    color: #6c757d;
+    margin-bottom: 5px;
+}
+
+.stat-card h3 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    margin-bottom: 0;
+}
+
+.card-icon {
+    font-size: 2rem;
+    color: #007bff;
+}
+
+/* Recent Activities Table */
+.table {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+}
+
+.table thead th {
+    background-color: #f8f9fa;
+    border-bottom: 2px solid #dee2e6;
+}
+
+.table tbody tr:hover {
+    background-color: #f8f9fa;
+}
+
+/* Modal Styles */
+.modal-header {
+    background-color: #f8f9fa;
+    border-bottom: 1px solid #dee2e6;
+}
+
+.modal-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+.modal-body p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.modal-footer {
+    display: flex;
+    justify-content: center;
+}
+
+.modal-footer .btn {
+    width: 100px;
+}
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .sidebar {
+        position: static;
+        height: auto;
+        width: 100%;
+    }
+
+    main {
+        margin-left: 0;
+    }
+}
